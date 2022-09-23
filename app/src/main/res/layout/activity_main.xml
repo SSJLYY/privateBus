@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--最外面的容器 有竖排组件规则，有背景配置-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:hardwareAccelerated="false"
+    android:background="@drawable/home1"
+    tools:context=".MainActivity">
+
+    <!--标题组件-->
+    <TextView
+        android:id="@+id/shaun_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Shaun's Private Bus"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        ></TextView>
+
+    <!--用户名输入框组件-->
+    <EditText
+        android:id="@+id/shaun_userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:hint="user name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:background="@drawable/bg_username"
+        ></EditText>
+
+
+    <!--密码输入框组件-->
+    <EditText
+        android:id="@+id/shaun_passWord"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:hint="pass word"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:background="@drawable/bg_username"
+        ></EditText>
+
+    <!--里面的容器，有容器内 横排组件规则 ；也有该容器与上一个组件的间距配置-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <!--注册按钮组件-->
+        <Button
+            android:id="@+id/shaun_register"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_button"
+            />
+
+        <!--登录按钮组件-->
+        <Button
+            android:id="@+id/shaun_login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bg_button"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
