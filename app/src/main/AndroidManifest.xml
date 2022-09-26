@@ -13,6 +13,13 @@
         android:theme="@style/Theme.ShaunPrivateBus"
         tools:targetApi="31">
         <activity
+            android:name=".LayoutMainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SlideActivity"
             android:exported="false">
             <meta-data
@@ -33,5 +40,8 @@
                 android:value="" />
         </activity>
     </application>
+
+    <!--获得互联网权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
